@@ -7,7 +7,8 @@
     const rootElement = document.getElementById("root");
     const children = ["hello all", " my name", " is", " jay"];
     const className = "container";
-    const element = <div className={className} children={children}></div>;
+    const props = { children, className };
+    const element = <h1 {...props}></h1>;
     ReactDOM.render(element, rootElement);
   </script>
 </body>
